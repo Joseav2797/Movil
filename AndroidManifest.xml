@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:compileSdkVersion="29"
+    android:compileSdkVersionCodename="10"
+    package="com.example.sistemabd"
+    platformBuildVersionCode="29"
+    platformBuildVersionName="10">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="29" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+
+    <application
+        android:theme="@ref/0x7f1201d5"
+        android:label="@ref/0x7f11001c"
+        android:icon="@ref/0x7f0e0000"
+        android:debuggable="true"
+        android:testOnly="true"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="@ref/0x7f0e0001"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@ref/0x7f11003b" />
+
+        <activity
+            android:label="@ref/0x7f110083"
+            android:name="com.example.sistemabd.Ciudades" />
+
+        <activity
+            android:label="@ref/0x7f110084"
+            android:name="com.example.sistemabd.Playa" />
+
+        <activity
+            android:name="com.example.sistemabd.row_clientes" />
+
+        <activity
+            android:theme="@ref/0x7f1201d7"
+            android:label="@ref/0x7f11001c"
+            android:name="com.example.sistemabd.MainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:theme="@ref/0x01030010"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@ref/0x7f0a0009" />
+    </application>
+</manifest>
